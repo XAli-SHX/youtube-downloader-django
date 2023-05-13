@@ -2,7 +2,7 @@ from django.shortcuts import render, redirect
 import pytube
 from django.utils import timezone
 from django.views.decorators.csrf import csrf_exempt
-from logger import Logger
+from logger.models import Logger
 
 
 @csrf_exempt
