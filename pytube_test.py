@@ -8,6 +8,6 @@ def download(request):
     stream.download()
 
 
-link = input('link')
+link = input('link: ')
 download(link)
 print('done')
