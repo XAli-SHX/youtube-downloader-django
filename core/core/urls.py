@@ -16,7 +16,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from downloader import views as downloader_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('/', downloader_views.download, name='download'),
 ]
